@@ -59,3 +59,38 @@ nav a:hover {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.bullet-tasks {
+  border: 3px solid black;
+  margin-top: 30px;
+}
+
+.cell-header {
+  text-align: center;
+  height: auto;
+  border: 1px solid red;
+}
+
+.custom-row {
+  display: grid;
+  grid-template-columns: 1fr repeat(7, 50px);
+  width: 100%;
+  justify-items: stretch;
+}
+
+.cell {
+  border: 1px solid red;
+  height: 50px;
+}
+
+.add-new-form {
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  border: 1px solid black
+}
+
+.hidden {
+  display: none;
+}
+

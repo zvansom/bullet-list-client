@@ -4,6 +4,7 @@ import axios from 'axios';
 import SERVER_URL from './constants/server';
 import './App.css';
 import Footer from './layout/Footer';
+import Daily from './Daily';
 import Home from './Home';
 import Login from './auth/Login';
 import Nav from './layout/Nav';
@@ -66,6 +67,9 @@ class App extends Component {
             } />
             <Route path="/profile" component={
               () => (<Profile user={this.state.user} />)
+            } />
+            <Route path="/daily" component={
+              () => (<Daily user={this.state.user} />)
             } />
           </div>
         </Router>

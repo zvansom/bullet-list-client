@@ -6,7 +6,7 @@ class Footer extends Component {
         <div>
           <footer className="footer">
             <span className="footer-text">
-              Created by Brandi Butler &copy; {new Date().getFullYear()}
+              It's not a bug it's a feature &copy; {new Date().getFullYear()}
             </span>
           </footer>
         </div>

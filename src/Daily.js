@@ -72,12 +72,12 @@ export default class Daily extends Component {
       newColor: '#bada55',
     }
   }
-
+  
   async componentDidMount() {
     // const res = await fetch(SERVER_URL + `/daily/${this.props.user.userId}`)
     // const tasks = await res.json();
     this.setState({
-      // dailyTasks: tasks
+      // dailyTasks: tasks,
       dailyTasks: sampleDailyTasks,
       addNewShowing: false,
     })
@@ -161,7 +161,7 @@ export default class Daily extends Component {
             <div className="input-field">
               <SliderPicker color={this.state.newColor} onChangeComplete={ this.handleChangeComplete } />
             </div>
-            <a class="waves-effect waves-light btn" onClick={this.handleNewTask}>Add Task</a>
+            <a className="waves-effect waves-light btn" onClick={this.handleNewTask}>Add Task</a>
           </div>
         </main>
       );
